@@ -13,12 +13,13 @@
         <button id="btn1">Click me ...</button>
         <hr>
         <div>
-            <input type="text" class="in1"value="100" />
+            <input type="text" class="in1 red"value="100" />
             <input type="text" class="in1">
             <input type="text" class="in1">
         </div>
         <div>
             <button id="btn2">SAVE</button>
+            <button id="btn3">COLOR</button>
         </div>
         <div id="div_form"></div>
     </body>
@@ -58,7 +59,7 @@
         });
 
     $("#btn3").bind("click",()=>{
-        $(".in1:even").addClass("red");
+        $(".in1:even").toggleClass("red");
     });
 
     $("#div_form").load ("./pages/form.html")
